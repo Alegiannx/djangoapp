@@ -1,0 +1,11 @@
+.root {
+    flex-grow: 1;
+}
+
+.pink{
+    background-color: steelblue;
+}
+
+.title {
+    flex-grow: 1;
+}
