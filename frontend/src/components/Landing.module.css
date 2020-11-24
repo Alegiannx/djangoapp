@@ -1,0 +1,30 @@
+.root {
+    flex-grow: 1;
+}
+
+.top{
+    padding: 15vh 0 30vh 5vw;
+    background: rgb(20,165,189);
+    background: linear-gradient(180deg, rgba(20,165,189,1) 0%, rgba(61,198,230,1) 45%, rgba(12,194,231,1) 75%, rgba(245,245,245,1) 100%);
+}
+
+.titles{
+    margin-bottom: 10vh;
+}
+
+.title {
+    margin-left: 7vw;
+}
+
+.subtitle{
+    margin-left: 15vw;
+    font-size: 1.2rem;
+}
+
+.buttons{
+    margin-left: 20vw;
+}
+
+.button{
+    color:white;
+}

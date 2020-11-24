@@ -12,19 +12,19 @@ export default function CustomAppBar() {
 
   return (
     <div className={styles.root}>
-      <AppBar className={styles.pink} position="static">
+      <AppBar position="fixed" className=" primary">
         <Toolbar>
           <IconButton edge="start" color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>
-          <Typography className={styles.title} variant="h6">
+          <Typography className={styles.title} title="MyBlog" variant="h6">
             MyBlog
           </Typography>
-          <IconButton color="inherit">
+          <IconButton title="Log In" color="inherit">
             <AccountBox />
           </IconButton>
         </Toolbar>
       </AppBar>
-    </div>
+    </div >
   );
 }

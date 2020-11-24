@@ -10,20 +10,27 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                exclude: /node_modules/,
                 use: [
-                    { loader: 'style-loader' },
+                    'style-loader',
                     {
                         loader: 'css-loader',
                         options: {
+                            importLoaders: 1,
                             modules: {
                                 localIdentName: "[name]__[local]___[hash:base64:5]",
-                            },
-                            importLoaders: 1,
-                            sourceMap: false,
+                            }
                         }
                     }
-                ]
+                ],
+                include: /\.module\.css$/
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader'
+                ],
+                exclude: /\.module\.css$/
             }
         ]
     }

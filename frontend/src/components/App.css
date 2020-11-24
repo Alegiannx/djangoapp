@@ -1,8 +1,64 @@
+html{
+    --primary-color: rgb(16, 69, 131);
+    --secondary-color:  rgb(13, 100, 199);
+    --tertiary-color:  rgb(4, 35, 71);
+    --text-special-color:rgb(0, 28, 59);
+    --secondary-hover-color:  rgb(43, 136, 243);
+    --primary-backgorund-color:  rgba(245,245,245,1);
+    --secondary-background-color:  rgb(240, 240, 240, 1);
+}
+
 body {
+    background-color: var(--primary-backgorund-color);
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body, p{
     margin: 0;
     padding: 0;
 }
 
+#root{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 * {
     box-sizing: border-box;
+}
+
+.text-special{
+    color: var(--text-special-color);
+    font-weight: 400;
+}
+
+.primary{
+    background-color: var(--primary-color);
+}
+
+.secondary{
+    background-color: var(--secondary-color);
+}
+
+.tertiary{
+    background-color: var(--tertiary-color);
+}
+
+.secondary:hover{
+    background-color: var(--secondary-hover-color);
+}
+
+img{
+    display: block;
 }

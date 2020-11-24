@@ -1,0 +1,27 @@
+.root{
+    margin-bottom: 8vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo{
+    width: 80%;
+    border: 1px solid var(--primary-color);
+    border-radius: 1vw;
+}
+
+.content{
+    margin-top: 5vh;
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: 200;
+    padding-left: 1em;
+    border-bottom: 3px solid var(--primary-color);
+    margin-bottom: 1em;
+}

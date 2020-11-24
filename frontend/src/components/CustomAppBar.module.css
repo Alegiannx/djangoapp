@@ -1,9 +1,5 @@
 .root {
-    flex-grow: 1;
-}
-
-.pink{
-    background-color: steelblue;
+    flex-grow: 0;
 }
 
 .title {
