@@ -11,6 +11,7 @@ Make a python virtual environment:
 ```shell
 python3 -m venv djangoapp
 cd djangoapp
+source bin/activate
 ```
 
 Clone this repo:
@@ -27,6 +28,16 @@ Install the python requirements
 ```shell
 cd src
 pip install -r requirements.txt
+python manage.py migrate
+```
+
+Create a .env file
+```shell
+touch .env
+```
+And add the secret key to its contents
+```
+export SECRET_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
 Install the npm packages needed:
@@ -36,8 +47,14 @@ npm install
 ```
 
 Run the starting scripts:
- * In `frontend` folder, run `npm run dev`
- * In `src` folder with active venv, run `python manage.py runserver`
+ * In `frontend` folder, run 
+ ```shell
+ npm run dev
+ ```
+ * In `src` folder with active venv, run 
+ ```shell
+ python manage.py runserver
+ ```
 
 
 Now just visit `http://localhost:8000/`
