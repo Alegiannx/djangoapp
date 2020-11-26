@@ -2,18 +2,19 @@ import React from 'react'
 import Typography from '@material-ui/core/Typography'
 import styles from './Landing.module.css'
 import Button from '@material-ui/core/Button'
+import { Link } from "react-router-dom";
 import Suggestions from './Suggestions.js'
 
 export default function Landing() {
 
     let listOfSuggestions = [
         {
-            name: "Get Help from People just like You",
+            title: "Get Help from People just like You",
             content: "Ask, get answers, solve problems, all with no cost and instant feedback, from people who have been in your place before. Don't hesitate to join the conversation and offer your experience to others too!",
             img: "https://images.unsplash.com/photo-1573497491208-6b1acb260507?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
         },
         {
-            name: "Learn Things and Improve Your Daily Life",
+            title: "Learn Things and Improve Your Daily Life",
             content: "lorem ipsum",
             img: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80"
         }
@@ -31,9 +32,11 @@ export default function Landing() {
                     </Typography>
                 </header>
                 <div className={styles.buttons}>
-                    <Button className={styles.button + " secondary"} title="See Posts" size="large" variant="contained">
-                        DISCOVER NOW
-                    </Button>
+                    <Link to="/posts">
+                        <Button className={styles.button + " secondary"} title="See Posts" size="large" variant="contained">
+                            DISCOVER NOW
+                        </Button>
+                    </Link>
                 </div>
             </section>
             <Suggestions suggestions={listOfSuggestions} />

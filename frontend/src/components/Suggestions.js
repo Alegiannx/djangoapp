@@ -8,7 +8,7 @@ export default function Suggestions(props) {
     function renderSuggestions() {
         return props.suggestions.map((s) => (
             <Suggestion
-                name={s.name}
+                title={s.title}
                 content={s.content}
                 img={s.img}
             />

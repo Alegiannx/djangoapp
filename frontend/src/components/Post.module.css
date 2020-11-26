@@ -1,0 +1,56 @@
+.root{
+    margin-bottom: 8vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.photo{
+    width: 30%;
+    border: 1px solid var(--primary-color);
+    border-radius: 1vw;
+    flex-grow: 0;
+}
+
+.text{
+    margin-left: 2em;
+}
+
+.author{
+    font-size: 1rem;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.like{
+    margin:1em;
+    color:white;
+    background-color: rgb(177, 60, 60);
+}
+
+.like:hover{
+    background-color: rgb(219, 71, 71);
+}
+
+.share{
+    margin:1em;
+    color:white;
+    background-color: rgb(60, 115, 177);
+}
+
+.share:hover{
+    background-color: rgb(57, 133, 221);
+}
+
+.title{
+    font-size: 3rem;
+}

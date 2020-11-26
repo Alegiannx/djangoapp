@@ -9,7 +9,7 @@ export default function Suggestions(props) {
         <div className={styles.root}>
             <Container maxWidth="lg">
                 <Typography className={styles.title + " text-special"} variant="h2">
-                    {props.name}
+                    {props.title}
                 </Typography>
             </Container>
             <Container className={styles.container} maxWidth="lg">

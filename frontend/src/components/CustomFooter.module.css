@@ -27,6 +27,10 @@
     flex-grow: 1;
 }
 
+.details li{
+    line-height: 2em;
+}
+
 .border{
     border-left: 2px solid var(--primary-color);
     border-right: 2px solid var(--primary-color);

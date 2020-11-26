@@ -10,7 +10,7 @@ export default function CustomFooter() {
         <footer className={styles.root + " tertiary"}>
             <Container className={styles.info} maxWidth="lg">
                 <div className={styles.logo}>
-                    <Typography variant="subtitle">
+                    <Typography variant="subtitle1">
                         MyBlog
                     </Typography>
                 </div>

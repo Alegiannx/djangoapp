@@ -25,6 +25,7 @@
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
-    "babel-plugin-react-css-modules": "^5.2.6"
+    "babel-plugin-react-css-modules": "^5.2.6",
+    "react-router-dom": "^5.2.0"
   }
 }

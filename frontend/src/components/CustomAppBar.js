@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import AccountBox from '@material-ui/icons/AccountBox';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-
+import { Link } from "react-router-dom";
 import styles from './CustomAppBar.module.css'
 
 export default function CustomAppBar() {
@@ -17,12 +17,18 @@ export default function CustomAppBar() {
           <IconButton edge="start" color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>
-          <Typography className={styles.title} title="MyBlog" variant="h6">
-            MyBlog
-          </Typography>
-          <IconButton title="Log In" color="inherit">
-            <AccountBox />
-          </IconButton>
+          <div className={styles.title}>
+            <Link to="/">
+              <Typography title="MyBlog" variant="h6">
+                MyBlog
+              </Typography>
+            </Link>
+          </div>
+          <Link to="/login">
+            <IconButton title="Log In" color="inherit">
+              <AccountBox />
+            </IconButton>
+          </Link>
         </Toolbar>
       </AppBar>
     </div >
