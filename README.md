@@ -4,7 +4,7 @@
 A Python Django backend and ReactJS frontend application.
 
 ## Requirements
-Make sure your system has `python3` and `npm` installed.
+Make sure your system has `git`, `python3` and `npm` installed.
 
 ## Installation
 Make a python virtual environment:
