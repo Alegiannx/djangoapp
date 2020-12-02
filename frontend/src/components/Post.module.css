@@ -7,21 +7,30 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
+    margin-top: 2em;
 }
 
 .photo{
-    width: 30%;
+    width: 100%;
+}
+
+.imgContainer{
+    max-width: 20%;
+    max-height: 20vh;
+    overflow: hidden;
+    flex-grow: 0;
     border: 1px solid var(--primary-color);
     border-radius: 1vw;
-    flex-grow: 0;
 }
 
 .text{
     margin-left: 2em;
+    width: 80%;
 }
 
 .author{
     font-size: 1rem;
+    margin-left: 5em;
 }
 
 .buttons{

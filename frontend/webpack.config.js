@@ -31,6 +31,10 @@ module.exports = {
                     'css-loader'
                 ],
                 exclude: /\.module\.css$/
+            },
+            {
+                test: /\.(png|jpg)$/,
+                loader: 'url-loader'
             }
         ]
     }

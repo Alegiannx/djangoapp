@@ -17,7 +17,11 @@ export default function Post(props) {
                 </Typography>
             </Container>
             <Container className={styles.container} maxWidth="lg">
-                <img className={styles.photo} src={props.img} />
+                <div className={styles.imgContainer}>
+                    <div>
+                        <img className={styles.photo} src={props.img} />
+                    </div>
+                </div>
                 <p className={styles.text}>{props.content}</p>
             </Container>
             <Container className={styles.buttons} maxWidth="lg">
