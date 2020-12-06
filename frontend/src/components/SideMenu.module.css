@@ -1,0 +1,20 @@
+.container{
+    position: fixed;
+    margin-top: 64px;
+    min-height: 50vh;
+    width: 15rem;
+    background-color: var(--tertiary-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1100;
+    padding: 1em 2em;
+    transition: 350ms;
+    box-shadow: 2px 5px 10px 0px rgba(0,0,0,0.5);
+}
+
+.hidden{
+    left:-15rem;
+}

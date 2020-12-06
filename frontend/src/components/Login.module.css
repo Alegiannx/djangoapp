@@ -1,0 +1,31 @@
+.container{
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.title{
+    font-size: 2.5rem;
+}
+
+.submit{
+    color:white;
+}
+
+.forgot{
+    color: var(--text-special-color);
+    font-weight: bold;
+}
+
+.form{
+    background-color: white;
+    padding: 2em 4em;
+    border: 2px solid var(--primary-color);
+}
+
+.input{
+    margin: 2em;
+}

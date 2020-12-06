@@ -1,0 +1,14 @@
+.container{
+    width: 100%;
+    border-bottom:1px solid var(--secondary-color);
+}
+
+.entry{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.link{
+    height: 100%;
+    width: 100%;
+}

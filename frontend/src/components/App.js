@@ -6,6 +6,7 @@ import CustomFooter from "./CustomFooter"
 import Landing from "./Landing"
 import "./App.css"
 import Posts from "./Posts";
+import Login from "./Login";
 
 export default function App(props) {
     return (
@@ -19,7 +20,7 @@ export default function App(props) {
                     <Posts />
                 </Route>
                 <Route path="/login">
-                    <h1>alex</h1>
+                    <Login />
                 </Route>
                 <Route path="/">
                     <Landing />
